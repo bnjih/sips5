@@ -53,15 +53,15 @@ UNDERLINE=$(tput smul)
 utilisateur=$(whoami)
 #starting
 echo "Auto Update for Ubuntu 20.04"
-sleep 3
+sleep 1
 echo "Initializing Updates"
 printf "${RED}Ecrire les informations correctement, si elles ne sont pas correct réinstallez le script!${NORMAL}\n"
 
 #UPDATES
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo timedatectl set-timedatectl set-timezone 'Europe/Brussels'
-sudo localectl set-keymap be
+sudo timedatectl set-timezone 'Europe/Brussels'
+sudo localectl set-x11-keymap be
 #NEEDED
 sudo apt-get -y install tree
 sudo apt-get -y install net-tools
